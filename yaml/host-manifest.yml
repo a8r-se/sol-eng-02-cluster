@@ -1,0 +1,121 @@
+---
+apiVersion: x.getambassador.io/v3alpha1
+kind: AmbassadorHost
+metadata:
+  name: se02.mturner.k736.net
+  namespace: ambassador
+spec:
+  hostname: "se02.mturner.k736.net"
+  acmeProvider:
+    authority: https://acme-v02.api.letsencrypt.org/directory
+    email: matt@datawire.io
+  requestPolicy:
+    insecure:
+      action: Redirect
+      additionalPort: 8080
+---
+apiVersion: x.getambassador.io/v3alpha1
+kind: AmbassadorHost
+metadata:
+  name: emojivoto-dev.se02.mturner.k736.net
+  namespace: ambassador
+spec:
+  hostname: "emojivoto-dev.se02.mturner.k736.net"
+  acmeProvider:
+    authority: https://acme-v02.api.letsencrypt.org/directory
+    email: matt@datawire.io
+  requestPolicy:
+    insecure:
+      action: Redirect
+      additionalPort: 8080
+---
+apiVersion: x.getambassador.io/v3alpha1
+kind: AmbassadorHost
+metadata:
+  name: emojivoto-staging.se02.mturner.k736.net
+  namespace: ambassador
+spec:
+  hostname: "emojivoto-staging.se02.mturner.k736.net"
+  acmeProvider:
+    authority: https://acme-v02.api.letsencrypt.org/directory
+    email: matt@datawire.io
+  requestPolicy:
+    insecure:
+      action: Redirect
+      additionalPort: 8080
+---
+apiVersion: x.getambassador.io/v3alpha1
+kind: AmbassadorHost
+metadata:
+  name: emojivoto.se02.mturner.k736.net
+  namespace: ambassador
+spec:
+  hostname: "emojivoto.se02.mturner.k736.net"
+  acmeProvider:
+    authority: https://acme-v02.api.letsencrypt.org/directory
+    email: matt@datawire.io
+  requestPolicy:
+    insecure:
+      action: Redirect
+      additionalPort: 8080
+---
+apiVersion: x.getambassador.io/v3alpha1
+kind: AmbassadorHost
+metadata:
+  name: boutique.se02.mturner.k736.net
+  namespace: ambassador
+spec:
+  hostname: "boutique.se02.mturner.k736.net"
+  acmeProvider:
+    authority: https://acme-v02.api.letsencrypt.org/directory
+    email: matt@datawire.io
+  requestPolicy:
+    insecure:
+      action: Redirect
+      additionalPort: 8080
+---
+apiVersion: x.getambassador.io/v3alpha1
+kind: AmbassadorHost
+metadata:
+  name: boutique-dev.se02.mturner.k736.net
+  namespace: ambassador
+spec:
+  hostname: "boutique-dev.se02.mturner.k736.net"
+  acmeProvider:
+    authority: https://acme-v02.api.letsencrypt.org/directory
+    email: matt@datawire.io
+  requestPolicy:
+    insecure:
+      action: Redirect
+      additionalPort: 8080
+---
+apiVersion: x.getambassador.io/v3alpha1
+kind: AmbassadorHost
+metadata:
+  name: monitoring.se02.mturner.k736
+  namespace: ambassador
+spec:
+  hostname: "monitoring.se02.mturner.k736"
+  acmeProvider:
+    authority: https://acme-v02.api.letsencrypt.org/directory
+    email: matt@datawire.io
+  requestPolicy:
+    insecure:
+      action: Redirect
+      additionalPort: 8080
+---
+apiVersion: x.getambassador.io/v3alpha1
+kind: AmbassadorHost
+metadata:
+  name: argocd.se02.muturner.k736
+  namespace: ambassador
+spec:
+  hostname: "argocd.se02.muturner.k736"
+  acmeProvider:
+    authority: https://acme-v02.api.letsencrypt.org/directory
+    email: matt@datawire.io
+  requestPolicy:
+    insecure:
+      action: Redirect
+      additionalPort: 8080
+---
